@@ -1,0 +1,40 @@
+# 应用名称
+spring:
+  application:
+    name: dynamic
+
+server:
+  port: 18888
+  tomcat:
+      accept-count: 1000
+      max-connections: 10000
+      connection-timeout: 120000
+      threads:
+        max: 1000
+
+# Actuator Web 访问端口
+management:
+  server:
+    port: 8081
+
+hikari:
+  # 多数据源配置
+  datasources:
+    dbdev:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/chny?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 111111
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    dbtest:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/chny?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 111111
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    dbprod:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/chny?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 111111
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
