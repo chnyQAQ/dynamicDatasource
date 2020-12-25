@@ -1,43 +1,42 @@
 package com.chny.dynamic.datasource.common;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-public class CustomException extends RuntimeException{
+public class DynamicException extends RuntimeException{
     private static final String DEFAULT_ERROR_CODE = "500";
     private String code;
     private Object[] params;
     private List<Locale> locales;
 
-    public CustomException(String code, Throwable e, List<Locale> locales, Object... params) {
+    public DynamicException(String code, Throwable e, List<Locale> locales, Object... params) {
         super(e);
         this.code = code;
         this.locales = locales;
         this.params = params;
     }
 
-    public CustomException(String code, Throwable e, Object... params) {
+    public DynamicException(String code, Throwable e, Object... params) {
         this(code, e, null, params);
     }
 
-    public CustomException(String code, Object... params) {
+    public DynamicException(String code, Object... params) {
         this(code, null, params);
     }
 
-    public CustomException(String msg) {
+    public DynamicException(String msg) {
         this(DEFAULT_ERROR_CODE, null, msg);
     }
 
-    public CustomException(String msg, Throwable e) {
+    public DynamicException(String msg, Throwable e) {
         this(DEFAULT_ERROR_CODE, e, null, msg);
     }
 
-    public CustomException(Throwable e) {
+    public DynamicException(Throwable e) {
         this(null, e);
     }
 
-    public CustomException() {
+    public DynamicException() {
 
     }
 

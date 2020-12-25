@@ -4,7 +4,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 @Component
-public class OperatorDAO {
+public class JdbcOperatorDAO {
 
     public Object query(JdbcTemplate template, String param) {
         String sql = "select * from user where username = ?";

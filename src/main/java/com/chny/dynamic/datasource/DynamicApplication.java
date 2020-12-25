@@ -14,4 +14,8 @@ public class DynamicApplication {
         SpringApplication.run(DynamicApplication.class, args);
     }
 
+    @Bean(name = "SpringContextUtil")
+    public SpringContextUtil getSpringContextUtil() {
+        return new SpringContextUtil();
+    }
 }

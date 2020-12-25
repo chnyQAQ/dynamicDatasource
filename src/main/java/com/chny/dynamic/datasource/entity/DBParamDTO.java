@@ -1,6 +1,6 @@
 package com.chny.dynamic.datasource.entity;
 
-public class ParamDTO {
+public class DBParamDTO {
 
     private String server;
 
