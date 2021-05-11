@@ -23,17 +23,17 @@ hikari:
     dbdev:
       jdbc-url: jdbc:mysql://127.0.0.1:3306/chny?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
       username: root
-      password: chny623020
+      password: chnyxxx
       driver-class-name: com.mysql.cj.jdbc.Driver
     dbtest:
       jdbc-url: jdbc:mysql://127.0.0.1:3306/chny?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
       username: root
-      password: chny623020
+      password: chnyxxx
       driver-class-name: com.mysql.cj.jdbc.Driver
     dbprod:
       jdbc-url: jdbc:mysql://127.0.0.1:3306/chny?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
       username: root
-      password: chny623020
+      password: chnyxxx
       driver-class-name: com.mysql.cj.jdbc.Driver
 
 
